@@ -91,7 +91,7 @@ Current audio data sourced from Spotify's Web API (via spotipy + reccobeats) was
 - Dance/Club Classics
 - Golden Age Hip-Hop
 - 00s R&B
-- Contemporary Indie
+- Indie
 
 **Conclusions**: The nature of the popularity variable and its calculation causes model accuracy to decrease depending on the recency of the training data. In this case, the dataset was last updated in 2022, so predicting current popularity from past data becomes increasingly challenging. It it also worth noting that there are many external factors that play into an artist's success: social status, promotion, and current trends can drastically influence the outcome of a release regardless of how "popular" the audio features are. Additionally, only numerical features were included in model training. A solid next step on that note is one-hot encoding for categorical variables (key + mode, genre).
 

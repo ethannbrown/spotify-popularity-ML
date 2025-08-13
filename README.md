@@ -1,6 +1,6 @@
 # Predicting Spotify Song Popularity with Python
 <img src="https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white" /> <img src="https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white" /> <img src="https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" /> <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" /> <img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" /> <img src="https://img.shields.io/badge/json-5E5C5C?style=for-the-badge&logo=json&logoColor=white" /><br>
-This project applies supervised machine learning to classify songs as *popular* or *unpopular* based on unique audio characteristics. The initial dataset includes 114,000 records and 21 columns comprised of audio features sourced from Spotify. The target variable, popularity (originally a score from 0–100), was binarized using percentile thresholds. After exploration and preprocessing, four classification models were trained on the data set, yielding 78% accuracy at best.<br>
+This project applies supervised machine learning to classify songs as *popular* or *unpopular* based on unique audio characteristics. The initial dataset includes 114,000 records and 21 columns comprised of audio features sourced from Spotify. After exploration and preprocessing, four classification models were trained on the data set, yielding 78% accuracy at best. Results suggest popularity is partially explainable by audio features, but external factors significantly affect prediction. A model like this could help music platforms surface emerging hits earlier, guide playlist curation, and assist record labels in marketing decisions.<br>
 
 <ins>**Libraries**</ins>: pandas, Matplotlib, seaborn, numpy, imblearn (SMOTE), scikit-learn, xgboost, spotipy/reccobeats
 
@@ -25,7 +25,7 @@ This project applies supervised machine learning to classify songs as *popular* 
  
 ## Methodology
 1. EDA and Data Cleaning
-   - Dropped innacurate values, irrelevant genres, and duplicate + null records.
+   - Dropped inaccurate values, irrelevant genres, and duplicate + null records.
    - Visualized data with Matplotlib + seaborn to assess how to preprocess the data.
    - Dropped tracks with popularity = 0 to address skew.
    - Mitigated multicollinearity using correlation heatmaps.

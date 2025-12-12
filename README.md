@@ -22,7 +22,20 @@ This project applies supervised machine learning to classify songs as *popular* 
   - <ins>time signature</ins>: An estimated time signature. The time signature (meter) is a notational convention to specify how many beats are in each bar (or measure). The time signature ranges from 3 to 7 indicating time signatures of "3/4", to "7/4".
   - <ins>valence</ins>: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
   - <ins>**popularity**</ins>: The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. 
- 
+
+## Database Schema
+5 Tables:
+artists - Unique artist entities
+albums - Album catalog with foreign keys
+song_features - Main table with 20+ audio features
+predictions - Model predictions storage
+model_performance - Historical metrics
+
+3 Views:
+popular_songs - Top tracks with full details
+genre_stats - Genre-level aggregations
+artist_stats - Artist performance metrics
+
 ## Methodology
 1. EDA and Data Cleaning
    - Dropped inaccurate values, irrelevant genres, and duplicate + null records.

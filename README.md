@@ -24,17 +24,17 @@ This project applies supervised machine learning to classify songs as *popular* 
   - <ins>**popularity**</ins>: The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. 
 
 ## Database Schema
-5 Tables:
-artists - Unique artist entities
-albums - Album catalog with foreign keys
-song_features - Main table with 20+ audio features
-predictions - Model predictions storage
-model_performance - Historical metrics
+5 Tables:<br>
+artists - Unique artist entities<br>
+albums - Album catalog with foreign keys<br>
+song_features - Main table with 20+ audio features<br>
+predictions - Model predictions storage<br>
+model_performance - Historical metrics<br>
 
-3 Views:
-popular_songs - Top tracks with full details
-genre_stats - Genre-level aggregations
-artist_stats - Artist performance metrics
+3 Views:<br>
+popular_songs - Top tracks with full details<br>
+genre_stats - Genre-level aggregations<br>
+artist_stats - Artist performance metrics<br>
 
 ## Methodology
 1. EDA and Data Cleaning

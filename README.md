@@ -23,19 +23,6 @@ This project applies supervised machine learning to classify songs as *popular* 
   - <ins>valence</ins>: A measure from 0.0 to 1.0 describing the musical positiveness conveyed by a track. Tracks with high valence sound more positive (e.g. happy, cheerful, euphoric), while tracks with low valence sound more negative (e.g. sad, depressed, angry).
   - <ins>**popularity**</ins>: The popularity of a track is a value between 0 and 100, with 100 being the most popular. The popularity is calculated by algorithm and is based, in the most part, on the total number of plays the track has had and how recent those plays are. 
 
-## Database Schema
-5 Tables:<br>
-artists - Unique artist entities<br>
-albums - Album catalog with foreign keys<br>
-song_features - Main table with 20+ audio features<br>
-predictions - Model predictions storage<br>
-model_performance - Historical metrics<br>
-
-3 Views:<br>
-popular_songs - Top tracks with full details<br>
-genre_stats - Genre-level aggregations<br>
-artist_stats - Artist performance metrics<br>
-
 ## Methodology
 1. EDA and Data Cleaning
    - Dropped inaccurate values, irrelevant genres, and duplicate + null records.
